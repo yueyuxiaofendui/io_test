@@ -1,0 +1,11 @@
+diskname: "/data/10/test".
+direct: "1".
+iodepth: "128".
+rw: "write".
+rw_ratio: "10".
+bs: "4".
+filesize: "100".
+num_threads: "1".
+runtime: "5".
+iodepth_low: "1".
+io_size: "100".

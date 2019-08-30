@@ -1,0 +1,1 @@
+/usr/bin/c++    -O0 -Wall -g2 -ggdb   CMakeFiles/io_test.dir/src/io_test.cpp.o CMakeFiles/io_test.dir/src/ofs_io.cpp.o CMakeFiles/io_test.dir/src/parse_options.cpp.o CMakeFiles/io_test.dir/src/do_random.cpp.o  -o io_test -rdynamic -lpthread 

@@ -1,0 +1,34 @@
+概要：
+    主要用于测试磁盘IOPS性能。
+编译：
+    cd build
+    cmake ..
+    make
+
+运行：
+    ./io_test
+
+配置参数：paragram.txt
+
+（1）diskname
+    测试路径到磁盘下的文件夹  /test
+（2）direct
+    直接io，默认为1（目前实现仅为直接IO）
+（3）iodepth
+    io深度，批量提交IO数量。
+（4）rw
+    读写类型
+（5）rw_ratio
+    读占比
+（6）bs
+    提交io块大小（单位 k）
+（7）filesize
+    测试文件大小（单位 G）
+（8）num_threads
+    执行线程数，默认为1（目前仅支持单个线程，因为系统iodepth限制，不必多个线程测试）
+（9）runtime
+    运行时间，可配置测试时间
+（10）iodepth_low
+    允许系统中未完成的io数量
+（11）io_size
+    测试使用文件大小，当运行时间过长，写入或者读取IO量超过该文件大小值时停止测试。
